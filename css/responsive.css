@@ -1,0 +1,234 @@
+/* Mobile First Responsive Design */
+
+/* Base Mobile Styles */
+@media (max-width: 767px) {
+    /* Typography adjustments */
+    h1 {
+      font-size: 1.75rem;
+    }
+    
+    h2 {
+      font-size: 1.5rem;
+    }
+    
+    h3 {
+      font-size: 1.25rem;
+    }
+    
+    .section-header {
+      margin-bottom: var(--space-8);
+    }
+    
+    /* Layout adjustments */
+    section {
+      padding: var(--space-12) 0;
+    }
+    
+    /* Navigation */
+    .nav-links {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      background-color: white;
+      padding: var(--space-4);
+      box-shadow: var(--shadow-md);
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    
+    .nav-links.active {
+      display: flex;
+    }
+    
+    .nav-link {
+      margin: var(--space-2) 0;
+      width: 100%;
+      padding: var(--space-2);
+    }
+    
+    .mobile-menu-toggle {
+      display: flex;
+    }
+    
+    /* Hero Section */
+    .hero-content {
+      flex-direction: column;
+    }
+    
+    .hero-text {
+      text-align: center;
+      margin-bottom: var(--space-8);
+      margin-top: 20px;
+    }
+    
+    .hero-buttons {
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .hero-stats {
+      justify-content: center;
+    }
+    
+    /* Tipos de Eventos Section */
+    .event-types-grid {
+      grid-template-columns: 1fr;
+      gap: var(--space-8);
+    }
+    
+    .event-type-card {
+      height: 250px;
+    }
+    
+    /* Features Section */
+    .features-grid {
+      grid-template-columns: 1fr;
+    }
+    
+    /* Pricing Section */
+    .pricing-grid {
+      grid-template-columns: 1fr;
+    }
+    
+    .pricing-card {
+      margin-bottom: var(--space-6);
+    }
+    
+    .pricing-card.featured {
+      transform: scale(1);
+    }
+    
+    /* Contact Section */
+    .contact-container {
+      flex-direction: column;
+    }
+    
+    /* Footer */
+    .footer-top {
+      flex-direction: column;
+    }
+    
+    .footer-nav {
+      flex-direction: column;
+      gap: var(--space-6);
+    }
+    
+    .footer-bottom {
+      flex-direction: column;
+      gap: var(--space-4);
+      text-align: center;
+    }
+    
+    .social-links {
+      justify-content: center;
+    }
+  }
+  
+  /* Tablet Styles */
+  @media (min-width: 768px) and (max-width: 1023px) {
+    /* Typography adjustments */
+    h1 {
+      font-size: 2.25rem;
+    }
+    
+    /* Event Types Section */
+    .event-types-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    
+    /* Features Section */
+    .features-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    
+    /* Pricing Section */
+    .pricing-grid {
+      grid-template-columns: 1fr;
+      max-width: 500px;
+      margin: 0 auto;
+    }
+    
+    /* Contact Section */
+    .contact-container {
+      flex-direction: column;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    
+    /* Footer */
+    .footer-nav {
+      gap: var(--space-4);
+    }
+  }
+  
+  /* Larger Tablets and Small Desktops */
+  @media (min-width: 1024px) and (max-width: 1279px) {
+    /* Hero Section */
+    .hero-text {
+      max-width: 450px;
+    }
+    
+    /* Features Section */
+    .features-grid {
+      grid-template-columns: repeat(3, 1fr);
+      gap: var(--space-4);
+    }
+    
+    /* Footer */
+    .footer-nav {
+      gap: var(--space-6);
+    }
+  }
+  
+  /* Specific component adjustments that apply across breakpoints */
+  
+  /* Navbar */
+  @media (max-width: 767px) {
+    #navbar {
+      background-color: white;
+      box-shadow: var(--shadow);
+    }
+    
+    .logo {
+      font-size: 1.25rem;
+    }
+  }
+  
+  /* Hero Section */
+  @media (max-width: 1023px) {
+    #hero {
+      padding-top: 80px;
+      min-height: auto;
+      padding-bottom: var(--space-12);
+    }
+    
+    .floating-shape {
+      opacity: 0.15;
+    }
+  }
+  
+  /* Showcase and Testimonials Sliders */
+  @media (max-width: 767px) {
+    .swiper-button-next, 
+    .swiper-button-prev {
+      display: none;
+    }
+    
+    .estilos-slider, 
+    .testimonials-slider {
+      padding-bottom: var(--space-8);
+    }
+  }
+  
+  /* FAQ Section */
+  @media (max-width: 767px) {
+    .faq-question h3 {
+      font-size: 1rem;
+    }
+    
+    .faq-item.active .faq-answer {
+      max-height: 300px;
+    }
+  }

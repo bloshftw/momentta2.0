@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Festivite - Invitaciones Digitales Modernas para Eventos</title>
+  <meta name="description" content="Crea invitaciones digitales espectaculares para tus eventos especiales con Festivite. Modernas, interactivas y personalizadas.">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+  
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/stylesheet.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav id="navbar">
+    <div class="container">
+      <div class="nav-wrapper">
+        <div class="logo">
+          <div class="logo-icon">🎉</div>
+          <span>Momentta</span>
+        </div>
+        
+        <div class="nav-links" id="navLinks">
+          <a href="#tipos-eventos" class="nav-link">Tipos de Eventos</a>
+          <a href="#caracteristicas" class="nav-link">Características</a>
+          <a href="#precios" class="nav-link">Precios</a>
+          <a href="#testimonios" class="nav-link">Testimonios</a>
+          <a href="#faq" class="nav-link">Preguntas Frecuentes</a>
+          <a href="#contacto" class="btn btn-primary">Comenzar</a>
+        </div>
+        
+        <div class="mobile-menu-toggle" id="menuToggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="hero">
+    <div class="floating-shape shape1"></div>
+    <div class="floating-shape shape2"></div>
+    <div class="floating-shape shape3"></div>
+    
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-text reveal">
+          <h1>Crea <span class="gradient-text primary-gradient">Increíbles</span> Invitaciones Digitales para Tus <span class="gradient-text festive-gradient">Eventos Especiales</span></h1>
+          <p>Celebra con estilo usando invitaciones digitales interactivas y personalizadas que sorprenderán a tus invitados y harán de tu evento algo inolvidable.</p>
+          
+          <div class="hero-buttons">
+            <a href="#tipos-eventos" class="btn btn-primary">Explorar Eventos <span class="arrow">→</span></a>
+            <a href="#contacto" class="btn btn-secondary">Contactarnos</a>
+          </div>
+          
+          <div class="hero-stats">
+            <div class="stat-item">
+              <div class="stat-number">Plantillas</div>
+              <div class="stat-label">disponibles a tu eleccion</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">100%</div>
+              <div class="stat-label">Personalizables</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">24/7</div>
+              <div class="stat-label">Soporte</div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="hero-image reveal delay-200">
+          <div class="device-mockup">
+            <img src="/src/Captura de pantalla 2025-05-05 014602.png" alt="Ejemplo de invitación digital en dispositivos móviles">
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tipos de Eventos Section -->
+  <section id="tipos-eventos">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="reveal">Encuentra la Invitación Perfecta para Tu Evento</h2>
+        <p class="reveal delay-100">Selecciona el tipo de evento para descubrir diseños exclusivos y ejemplos personalizados.</p>
+      </div>
+      
+      <div class="event-types-grid reveal delay-200">
+        <div class="event-type-card" data-event="bodas">
+          <div class="event-card-content">
+            <h3>Bodas</h3>
+            <p>Invitaciones elegantes y sofisticadas para el día más especial de tu vida.</p>
+            <div class="card-overlay">
+              <a href="bodas.html" class="btn btn-white">Ver Diseños</a>
+            </div>
+          </div>
+          <div class="card-bg" style="background-image: url('/img/imagenes-eventos/casamiento.jpg')"></div>
+        </div>
+        
+        <div class="event-type-card" data-event="cumpleanos">
+          <div class="event-card-content">
+            <h3>Cumpleaños</h3>
+            <p>Diseños coloridos y divertidos para celebrar otro año de vida.</p>
+            <div class="card-overlay">
+              <a href="cumpleanos.html" class="btn btn-white">Ver Diseños</a>
+            </div>
+          </div>
+          <div class="card-bg" style="background-image: url('/img/imagenes-eventos/cumpleaños.jpg')"></div>
+        </div>
+        
+        <div class="event-type-card" data-event="baby-shower">
+          <div class="event-card-content">
+            <h3>Baby Shower</h3>
+            <p>Invitaciones tiernas y encantadoras para celebrar la llegada del bebé.</p>
+            <div class="card-overlay">
+              <a href="baby-shower.html" class="btn btn-white">Ver Diseños</a>
+            </div>
+          </div>
+          <div class="card-bg" style="background-image: url('/img/imagenes-eventos/baby-shower.jpg')"></div>
+        </div>
+        
+        <div class="event-type-card" data-event="empresarial">
+          <div class="event-card-content">
+            <div class="event-icon"></div>
+            <h3>Empresarial</h3>
+            <p>Diseños profesionales para conferencias, galas y eventos de networking.</p>
+            <div class="card-overlay">
+              <a href="empresarial.html" class="btn btn-white">Ver Diseños</a>
+            </div>
+          </div>
+          <div class="card-bg" style="background-image: url('/img/imagenes-eventos/empresarial.jpg')"></div>
+        </div>
+        
+        <div class="event-type-card" data-event="graduacion">
+          <div class="event-card-content">
+            <h3>Recepciones</h3>
+            <p>Celebra tu egreso invitando a tus seres queridos a tu recepcion</p>
+            <div class="card-overlay">
+              <a href="graduacion.html" class="btn btn-white">Ver Diseños</a>
+            </div>
+          </div>
+          <div class="card-bg" style="background-image: url('/img/imagenes-eventos/recepcion.jpg')"></div>
+        </div>
+        
+        <div class="event-type-card" data-event="aniversario">
+          <div class="event-card-content">
+            <div class="event-icon">❤️</div>
+            <h3>Aniversario</h3>
+            <p>Diseños románticos para celebrar años de amor y compañía.</p>
+            <div class="card-overlay">
+              <a href="aniversario.html" class="btn btn-white">Ver Diseños</a>
+            </div>
+          </div>
+          <div class="card-bg" style="background-image: url('https://images.pexels.com/photos/5638732/pexels-photo-5638732.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Estilos Section -->
+  <section id="estilos">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="reveal">Estilos Exclusivos para Cada Ocasión</h2>
+        <p class="reveal delay-100">Explora nuestras temáticas más populares.</p>
+      </div>
+      
+      <div class="swiper estilos-slider reveal delay-200">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="estilo-card">
+              <div class="estilo-image">
+                <img src="https://images.pexels.com/photos/931162/pexels-photo-931162.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Estilo Boda Dorada">
+              </div>
+              <div class="estilo-info">
+                <h3>Boda Dorada</h3>
+                <p>Elegancia y lujo con detalles en oro para una celebración sofisticada.</p>
+                <a href="bodas.html" class="btn btn-small">Ver Diseños</a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="swiper-slide">
+            <div class="estilo-card">
+              <div class="estilo-image">
+                <img src="https://images.pexels.com/photos/4110651/pexels-photo-4110651.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Cumpleaños Infantil">
+              </div>
+              <div class="estilo-info">
+                <h3>Cumpleaños Infantil</h3>
+                <p>Invitaciones coloridas y divertidas con animaciones para la fiesta de los pequeños.</p>
+                <a href="cumpleanos.html" class="btn btn-small">Ver Diseños</a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="swiper-slide">
+            <div class="estilo-card">
+              <div class="estilo-image">
+                <img src="https://images.pexels.com/photos/6692132/pexels-photo-6692132.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Baby Shower Pastel">
+              </div>
+              <div class="estilo-info">
+                <h3>Baby Shower Pastel</h3>
+                <p>Tonos suaves y delicados para celebrar la llegada del nuevo miembro de la familia.</p>
+                <a href="baby-shower.html" class="btn btn-small">Ver Diseños</a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="swiper-slide">
+            <div class="estilo-card">
+              <div class="estilo-image">
+                <img src="https://images.pexels.com/photos/3184287/pexels-photo-3184287.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Corporativo Minimalista">
+              </div>
+              <div class="estilo-info">
+                <h3>Corporativo Minimalista</h3>
+                <p>Diseño limpio y profesional para eventos empresariales de alto nivel.</p>
+                <a href="empresarial.html" class="btn btn-small">Ver Diseños</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="estilo-card">
+              <div class="estilo-image">
+                <img src="https://images.pexels.com/photos/3184287/pexels-photo-3184287.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Corporativo Minimalista">
+              </div>
+              <div class="estilo-info">
+                <h3>Corporativo Minimalista</h3>
+                <p>Diseño limpio y profesional para eventos empresariales de alto nivel.</p>
+                <a href="empresarial.html" class="btn btn-small">Ver Diseños</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Características Section -->
+  <section id="caracteristicas">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="reveal">¿Por qué Elegir Nuestras Invitaciones Digitales?</h2>
+        <p class="reveal delay-100">Crea experiencias memorables para tus invitados desde el momento en que reciben tu invitación.</p>
+      </div>
+      
+      <div class="features-grid">
+        <div class="feature-card reveal delay-200">
+          <div class="feature-icon">✨</div>
+          <h3>Elementos Interactivos</h3>
+          <p>Sorprende a tus invitados con animaciones, música y elementos interactivos que dan vida a tu invitación.</p>
+        </div>
+        
+        <div class="feature-card reveal delay-300">
+          <div class="feature-icon">📱</div>
+          <h3>Optimizado para Móviles</h3>
+          <p>Experiencia de visualización perfecta en cualquier dispositivo - smartphone, tablet o computadora.</p>
+        </div>
+        
+        <div class="feature-card reveal delay-400">
+          <div class="feature-icon">✅</div>
+          <h3>Confirmacion de Asistencia</h3>
+          <p>Visualiza quién ha confirmado la asistencia para tu evento ayudandote a organizarlo mejor</p>
+        </div>
+        
+        <div class="feature-card reveal delay-500">
+          <div class="feature-icon">🎨</div>
+          <h3>Diseños Personalizables</h3>
+          <p>Elige entre una variedad de plantillas o crea tu propio diseño que se adapte perfectamente a la temática de tu evento.</p>
+        </div>
+        
+        <div class="feature-card reveal delay-600">
+          <div class="feature-icon">🔔</div>
+          <h3>Planificacion</h3>
+          <p>Ofrece informacion importante relacionada a tu evento para que tus invitados esten al tanto de todo</p>
+        </div>
+        
+        <div class="feature-card reveal delay-700">
+          <div class="feature-icon">🌍</div>
+          <h3>Ecológico</h3>
+          <p>Ahorra papel y reduce tu huella de carbono con invitaciones digitales.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Section -->
+  <section id="precios">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="reveal">Precios Simples y Transparentes</h2>
+        <p class="reveal delay-100">Elige el plan perfecto para las necesidades de tu evento.</p>
+      </div>
+      
+      <div class="pricing-grid">
+        <div class="pricing-card reveal delay-200">
+          <div class="pricing-header">
+            <h3>Estandar</h3>
+            <div class="price">$15.000ARS</div>
+            <div class="price-period">por invitacion</div>
+          </div>
+          
+          <ul class="pricing-features">
+            <li>Variedad de plantillas</li>
+            <li>Informacion principal del evento (fecha,hora,lugar y descripcion del evento)</li>
+            <li>Confirmacion de asistencia</li>
+            <li>Carrusel de imagenes (5 imagenes) </li>
+            <li>Mapa con ubicacion del evento</li>
+            <li>Diseños totalmente responsive</li>
+            <li>Personalizacion de textos</li>
+          </ul>
+          
+          <a href="#contacto" class="btn btn-secondary btn-full">Comenzar</a>
+        </div>
+        
+        <div class="pricing-card featured reveal delay-300">
+          <div class="popular-tag">Más Popular</div>
+          <div class="pricing-header">
+            <h3>Premium</h3>
+            <div class="price">$25.000ARS</div>
+            <div class="price-period">por invitacion</div>
+          </div>
+          
+          <ul class="pricing-features">
+            <li>Todo lo que incluye el paquete estandar</li>
+            <li>Carrusel de imagenes mejorado (hasta 12 imagenes)</li>
+            <li>Musica de fondo</li>
+            <li>Contador Regresivo</li>
+            <li>Videos incluidos</li>
+            <li>Funcionalidades especificas segun evento</li>
+            <li>Personalizacion de fuentes/colores</li>
+            <li>Animaciones personalizadas</li>
+          </ul>
+          
+          <a href="#contacto" class="btn btn-primary btn-full">Comenzar</a>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section id="faq">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="reveal">Preguntas Frecuentes</h2>
+        <p class="reveal delay-100">Todo lo que necesitas saber sobre nuestras invitaciones digitales.</p>
+      </div>
+      
+      <div class="faq-container reveal delay-200">
+        <div class="faq-item">
+          <div class="faq-question">
+            <h3>¿Cómo funcionan las invitaciones digitales?</h3>
+            <div class="accordion-icon">+</div>
+          </div>
+          <div class="faq-answer">
+            <p>Nuestras invitaciones digitales se envían por correo electrónico, mensaje de texto o redes sociales. Los destinatarios reciben un enlace que abre su invitación personalizada en cualquier navegador web. Pueden confirmar su asistencia directamente a través de la invitación, y tú recibirás actualizaciones en tiempo real en tu panel de control.</p>
+          </div>
+        </div>
+        
+        <div class="faq-item">
+          <div class="faq-question">
+            <h3>¿Puedo personalizar los diseños?</h3>
+            <div class="accordion-icon">+</div>
+          </div>
+          <div class="faq-answer">
+            <p>¡Absolutamente! Todas nuestras plantillas son completamente personalizables. Puedes cambiar colores, fuentes, imágenes y texto para que coincidan con la temática de tu evento. Nuestros planes Premium y Ultimate ofrecen aún más opciones de personalización, incluyendo elementos animados y música.</p>
+          </div>
+        </div>
+        
+        <div class="faq-item">
+          <div class="faq-question">
+            <h3>¿Cómo confirman asistencia los invitados?</h3>
+            <div class="accordion-icon">+</div>
+          </div>
+          <div class="faq-answer">
+            <p>Los invitados pueden confirmar su asistencia directamente a través de la invitación digital con solo unos clics. Pueden indicar asistencia, seleccionar preferencias de comida si corresponde, e incluso agregar notas. Verás todas las respuestas en tu panel de eventos en tiempo real.</p>
+          </div>
+        </div>
+        
+        <div class="faq-item">
+          <div class="faq-question">
+            <h3>¿Qué pasa si algunos de mis invitados no son expertos en tecnología?</h3>
+            <div class="accordion-icon">+</div>
+          </div>
+          <div class="faq-answer">
+            <p>Nuestras invitaciones están diseñadas para ser extremadamente fáciles de usar, incluso para aquellos que no se sienten cómodos con la tecnología. Para los invitados que puedan necesitar ayuda adicional, puedes designar a una persona de contacto que los ayude a acceder a la invitación o confirmar su asistencia.</p>
+          </div>
+        </div>
+        
+        <div class="faq-item">
+          <div class="faq-question">
+            <h3>¿Puedo enviar recordatorios a mis invitados?</h3>
+            <div class="accordion-icon">+</div>
+          </div>
+          <div class="faq-answer">
+            <p>¡Sí! Puedes programar recordatorios automáticos para que se envíen a tus invitados en intervalos específicos antes de tu evento. También puedes enviar recordatorios dirigidos solo a aquellos que aún no han confirmado su asistencia.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contacto">
+    <div class="container">
+      <div class="section-header light">
+        <h2 class="reveal">Comienza Hoy Mismo</h2>
+        <p class="reveal delay-100">Crea tu primera invitación digital en minutos o contáctanos para resolver todas tus dudas.</p>
+      </div>
+      
+      <div class="contact-container">
+        <div class="contact-form-wrapper reveal delay-200">
+          <form id="contactForm" class="contact-form">
+            <div class="form-group">
+              <label for="name">Nombre Completo</label>
+              <input type="text" id="name" name="name" placeholder="Ingresa tu nombre completo" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="email">Correo Electrónico</label>
+              <input type="email" id="email" name="email" placeholder="Ingresa tu correo electrónico" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="phone">Teléfono (opcional)</label>
+              <input type="tel" id="phone" name="phone" placeholder="Ingresa tu número de teléfono">
+            </div>
+            
+            <div class="form-group">
+              <label for="eventType">Tipo de Evento</label>
+              <select id="eventType" name="eventType" required>
+                <option value="" disabled selected>Selecciona el tipo de evento</option>
+                <option value="boda">Boda</option>
+                <option value="cumpleanos">Cumpleaños</option>
+                <option value="empresarial">Evento Empresarial</option>
+                <option value="babyShower">Baby Shower</option>
+                <option value="aniversario">Aniversario</option>
+                <option value="graduacion">Graduación</option>
+                <option value="otro">Otro</option>
+              </select>
+            </div>
+            
+            <div class="form-group">
+              <label for="eventDate">Fecha del Evento</label>
+              <input type="date" id="eventDate" name="eventDate" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="message">Detalles Adicionales</label>
+              <textarea id="message" name="message" placeholder="Cuéntanos más sobre tu evento o consulta (opcional)"></textarea>
+            </div>
+            
+            <button type="submit" class="btn btn-accent btn-full">Enviar Consulta</button>
+          </form>
+          
+          <div id="formSuccess" class="form-success">
+            <div class="success-icon">✓</div>
+            <h3>¡Gracias!</h3>
+            <p>Hemos recibido tu información y te contactaremos pronto para ayudarte a crear tu invitación digital perfecta.</p>
+          </div>
+        </div>
+        
+        <div class="contact-info reveal delay-300">
+          <div class="celebration-graphic">
+            <div class="celebration-icon">🎊</div>
+          </div>
+          
+          <h3>¿Listo para sorprender a tus invitados?</h3>
+          <p>Únete a miles de anfitriones que han elevado sus eventos con nuestras impresionantes invitaciones digitales.</p>
+          
+          <div class="contact-methods">
+            <div class="contact-method">
+              <div class="contact-icon">📞</div>
+              <div class="contact-detail">
+                <h4>Llámanos</h4>
+                <p>+34 91 123 45 67</p>
+              </div>
+            </div>
+            
+            <div class="contact-method">
+              <div class="contact-icon">✉️</div>
+              <div class="contact-detail">
+                <h4>Escríbenos</h4>
+                <p>hola@festivite.com</p>
+              </div>
+            </div>
+            
+            <div class="contact-method">
+              <div class="contact-icon">💬</div>
+              <div class="contact-detail">
+                <h4>Chat en Vivo</h4>
+                <p>Disponible 24/7</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="contact-benefits">
+            <div class="benefit-item">
+              <div class="benefit-icon">✓</div>
+              <div class="benefit-text">Configuración fácil en minutos</div>
+            </div>
+            
+            <div class="benefit-item">
+              <div class="benefit-icon">✓</div>
+              <div class="benefit-text">Equipo de soporte dedicado</div>
+            </div>
+            
+            <div class="benefit-item">
+              <div class="benefit-icon">✓</div>
+              <div class="benefit-text">Garantía de satisfacción de 30 días</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-logo">
+          <div class="logo-icon">🎉</div>
+          <span>Festivite</span>
+        </div>
+        
+        <div class="footer-nav">
+          <div class="footer-nav-column">
+            <h4>Producto</h4>
+            <ul>
+              <li><a href="#caracteristicas">Características</a></li>
+              <li><a href="#tipos-eventos">Tipos de Eventos</a></li>
+              <li><a href="#precios">Precios</a></li>
+              <li><a href="#faq">Preguntas Frecuentes</a></li>
+            </ul>
+          </div>
+          
+          <div class="footer-nav-column">
+            <h4>Empresa</h4>
+            <ul>
+              <li><a href="#">Sobre Nosotros</a></li>
+              <li><a href="#">Carreras</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Prensa</a></li>
+            </ul>
+          </div>
+          
+          <div class="footer-nav-column">
+            <h4>Recursos</h4>
+            <ul>
+              <li><a href="#">Centro de Ayuda</a></li>
+              <li><a href="#">Comunidad</a></li>
+              <li><a href="#">Webinars</a></li>
+              <li><a href="#">Socios</a></li>
+            </ul>
+          </div>
+          
+          <div class="footer-nav-column">
+            <h4>Legal</h4>
+            <ul>
+              <li><a href="#">Política de Privacidad</a></li>
+              <li><a href="#">Términos de Servicio</a></li>
+              <li><a href="#">Política de Cookies</a></li>
+              <li><a href="#">Cumplimiento RGPD</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <div class="copyright">
+          &copy; 2025 Festivite. Todos los derechos reservados.
+        </div>
+        
+        <div class="social-links">
+          <a href="#" class="social-link">Facebook</a>
+          <a href="#" class="social-link">Twitter</a>
+          <a href="#" class="social-link">Instagram</a>
+          <a href="#" class="social-link">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Success Modal -->
+  <div id="successModal" class="modal">
+    <div class="modal-content">
+      <span class="close-modal">&times;</span>
+      <div class="success-animation">
+        <div class="confetti"></div>
+        <div class="checkmark">✓</div>
+      </div>
+      <h3>¡Gracias!</h3>
+      <p>Hemos recibido tu información y te contactaremos pronto para ayudarte a crear tu invitación digital perfecta.</p>
+      <button class="btn btn-primary btn-full" id="closeModal">Continuar</button>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/swiper-config.js"></script>
+  <script src="js/form-validation.js"></script>
+  <script src="js/eventos.js"></script>
+</body>
+</html>
