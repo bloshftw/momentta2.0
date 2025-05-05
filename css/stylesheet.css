@@ -331,17 +331,22 @@
     align-items: center;
   }
   
-  .logo {
-    display: flex;
-    align-items: center;
-    font-weight: var(--font-bold);
-    font-size: 1.5rem;
-    color: var(--primary-800);
+  .logo-icon img {
+    max-width: 100%; /* Asegura que el logo no exceda el contenedor */
+    height: auto; /* Mantiene la proporción del logo */
+    display: block; /* Elimina espacios extra alrededor de la imagen */
+    max-height: 3rem;
   }
   
-  .logo-icon {
-    margin-right: var(--space-2);
-    font-size: 1.75rem;
+  .logo {
+    display: flex;
+    align-items: center; /* Centra verticalmente el logo y el texto */
+    gap: 10px; /* Espaciado entre el logo y el texto */
+  }
+  
+  .logo span {
+    font-size: 1.5rem; /* Ajusta el tamaño del texto si es necesario */
+    font-weight: bold;
   }
   
   .nav-links {
@@ -590,6 +595,19 @@
   
   .event-type-card:hover .card-overlay {
     opacity: 1;
+  }
+
+  .coming-soon-message {
+    position: absolute; /* Asegúrate de que el contenedor tenga posición relativa */
+    top: 50%; /* Centrar verticalmente */
+    left: 50%; /* Centrar horizontalmente */
+    transform: translate(-50%, -50%); /* Ajustar el centro */
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo semi-transparente */
+    color: white; /* Color del texto */
+    padding: 100% 100%; /* Espaciado alrededor del texto */
+    border-radius: 5px; /* Bordes redondeados */
+    font-size: 1.2em; /* Tamaño de fuente */
+    z-index: 10; /* Asegúrate de que esté por encima de otros elementos */
   }
   
   /* Estilos Section */
