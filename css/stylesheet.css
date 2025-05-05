@@ -153,6 +153,7 @@
   p {
     margin-bottom: var(--space-4);
     line-height: 1.6;
+    margin-top: 5px;
   }
   
   /* Buttons */
